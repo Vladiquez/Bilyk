@@ -1,0 +1,41 @@
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.head{
+    background-color: black;
+    text-align: center;
+    color: aliceblue;
+}
+@media (max-width: 800px) {
+    .container{
+        flex-direction: column;
+    }
+    .head{
+        background-color: aquamarine;
+    }
+}
+
+.nav{
+    display: inline-block;
+    justify-content: flex-start;
+    float: left;
+    background-color: brown;
+}
+.main{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: blue;
+}
+.links{
+    float: right;
+    display: inline-block;
+    justify-content: flex-end;
+    background-color: blueviolet;
+}
+.footer{
+    clear: both;
+    text-align: center;
+    background-color: aquamarine;
+}
