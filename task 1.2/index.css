@@ -1,6 +1,4 @@
-.container{
-    display: flex;
-}
+
 *{
     box-sizing: border-box;
 }
@@ -16,8 +14,7 @@
 }
 
 img {
-    display: block;
-    width: 100%;
+    display: flex;
 }
 
 a {
@@ -49,7 +46,7 @@ h1, h2 {
 }
 
 .sub-stories {
-    overflow: hidden;
+    overflow: visible;
     margin: 0 0 25px 0;
 }
 
@@ -61,11 +58,35 @@ h1, h2 {
     font-size: 80%;
 }
 
-.last {
+.bear {
     margin-right: 0;
 }
-@media (min-width:768px){
-    .container{
-        flex-direction: column;
+
+@media (max-width:767px){
+    .page-wrap{
+        width: auto;
+    }
+    .main-story{
+        width: auto;
+    }
+    .sub-stories{
+        display: grid;
+        grid-template-areas: 
+        "kitty"
+        "cage"
+        "bear";
     }
 }
+@media (min-width:768px) and (max-width:991.98px){
+    .sub-stories{
+        display: grid;
+        grid-template-areas: 
+        "kitty cage"
+        "bear bear";
+}}
+@media (min-width:992px) and (max-width:1199.98px){
+    .sub-stories{
+        display: grid;
+        grid-template-areas: 
+        "kitty cage bear";
+}}
