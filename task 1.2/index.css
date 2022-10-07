@@ -14,14 +14,15 @@
 }
 
 img {
-    display: flex;
+    display: block;
+    width: 100%;
 }
 
 a {
     color: lightblue;
 }
 
-.story-intro {
+.story-kitty .story-cage .story-bear {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -38,19 +39,19 @@ h1, h2 {
     margin: 0 0 10px 0;
 }
 
-.story-intro h1 {
+.story-kitty .story-cage .story-bear h1 {
     font-size: 2.5em;
 }
-.story-intro p {
+.story-kitty .story-cage .story-bear p {
     margin: 0;
 }
 
 .sub-stories {
-    overflow: visible;
+    overflow: hidden;
     margin: 0 0 25px 0;
 }
 
-.sub-story {
+.kitty .cage .bear {
     float: left;
     width: 250px;
     margin-right: 25px;
