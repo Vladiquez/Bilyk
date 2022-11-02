@@ -1,0 +1,185 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://media.istockphoto.com/photos/smoke-or-fog-isolated-on-black-background-picture-id1285249688?k=20&m=1285249688&s=612x612&w=0&h=aVmgHI5840GDzqNbiWTtfQCQztar_Nh2vNdd-swjYHo=);
+    background-size: cover;
+}
+
+.wrapper {
+	height: 350px;
+	margin: 100px auto 0;
+	position: relative;
+	width: 700px;
+}
+
+.slider {
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+}
+
+.slides {
+	height: inherit;
+	opacity: 0;
+	position: absolute;
+	width: inherit;
+	z-index: 0;
+	-webkit-transform: scale(1.5);
+	-moz-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	transform: scale(1.5);
+	-webkit-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-moz-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	-o-transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+	transition: transform ease-in-out .5s, opacity ease-in-out .5s;
+}
+
+.slide1 { background-image: url(https://lh3.googleusercontent.com/mDudcjg41WpZu2hD6Dji0QMm6TMo3vFV4iqyfrrOeZamHPulAr-PClmTqmV3RQnt-YbA1ZvF0dCQBUWoDRnSZ_fzjtN9vzSfA87q_4lA9to6KuFt5oE6WnrgfiUY37DsKcSqBZ1GU9TmgWSQBuaUhVz13Rb-wsvGhNXDO0DWDpJ8DtkVG2y6ZvRer8wW79D1KQZd61Oc3fYCVF8Oode9IVbw2PGBI40Z9AqHh37CNSVjO-j1EGTKxCwh8jMg6zdL56TdFBvj-7xnN7yAtogOt21wCLPg1lWxU__t8ojViOrE2KFUBo4r6ar2tVtB7DhhD97qM0Iwp4C-tqQ1suErlIDOC-RjD6mUCDKXvOTCYa95-POP2Iej0O4TSGp3WLY8FmE8vGq0QWV4G3Jzn_MTcXyBtKARdu2la-FoMo7MQZ7KqiONqSU8cx7YndvUgt_E0iN1tjg7Dm1b712oZ_U-pHaq0euwn7elksgd1SMuasuPqeF6U5Evnuw8SGVnnMAL34L9Gji2F1w8ZLgQ9cWRVJXih7eM17akBtLfRMR2E56LN8rqTG1pV39pidrnFXlPb2sQi2SbMhryRQ-aHSiohtm4ghUZ5NJTcS1yr3kwALELhzTQzCbV9PKN0a-wpwDhDutgpb34RbKsIXymSB9r58yoYSouGaJTuQ5d86NzAviT6vMecr8YkP2NGpZw8WpccXrDPkF83y-oZpeh0GV46BiYbQZTyI2Db8WGGgR2a7jQ2UmncOkv3vuMKbsFRr0DgEUZp4-sl3KBe6UrSFZuPdtN1Z5hvAJnE2d3UYhcxgW55A0C4oJ3g977oKyjTXrOsaIpvQXb39DKfMp-4aRIhdvjevEJ-fDudYS5Dl03l3iMUxFF-3hDiEw1lH52knOYOaHfZJulcImeaQ7ejYNTuJXYKdlgzRobMzXqyHkr=w2190-h1642-no?authuser=0);
+background-size:cover;
+background-position: center;}
+.slide2 { background-image: url(http://habrastorage.org/files/3e1/95d/c7f/3e195dc7f5a64469807f49a14f97ba0e.jpg); }
+.slide3 { background-image: url(http://habrastorage.org/files/663/6b1/d4f/6636b1d4f8e643d29eab8c192fc1cea3.jpg); }
+
+#slide1:checked ~ .slider > .slide1,
+#slide2:checked ~ .slider > .slide2,
+#slide3:checked ~ .slider > .slide3 {
+	opacity: 1;
+	z-index: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+.arrows {
+    width: 100%;
+	position: absolute;
+    justify-content: space-between;
+	margin-top: 150px;
+}
+.arrow::after {
+    border: 2px solid #ddd;
+	content: " ";
+	display: block;
+	height: 12px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	width: 12px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	background-image: url("kisspng-car-rim-alloy-wheel-bbs-kraftfahrzeugtechnik-car-wheel-5acbda910ed321.9554279315233092010607.png");
+    background-size: cover;
+}
+
+.arrows_wrapper{
+    position: absolute;
+    top: 0px;
+    bottom: 0;
+    left: -50px;
+    right: -50px;
+    z-index: 100;
+}
+
+.arrows_slide1, .arrows_slide2, .arrows_slide3 {
+    display: none;
+}
+#slide1:checked ~ .arrows_wrapper > .arrows_slide1 {
+	display: flex;
+}
+#slide2:checked ~ .arrows_wrapper > .arrows_slide2 {
+	display: flex;
+}
+#slide3:checked ~ .arrows_wrapper > .arrows_slide3 {
+	display: flex;
+}
+
+.wrapper > input {
+	display: none;
+}
+
+.wrapper .controls {
+	left: 50%;
+	margin-left: -98px;
+	position: absolute;
+}
+
+.wrapper label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 8px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	-webkit-transition: background ease-in-out .5s;
+	-moz-transition: background ease-in-out .5s;
+	-o-transition: background ease-in-out .5s;
+	transition: background ease-in-out .5s;
+}
+
+.wrapper label:hover, 
+#slide1:checked ~ .controls label:nth-of-type(1),
+#slide2:checked ~ .controls label:nth-of-type(2),
+#slide3:checked ~ .controls label:nth-of-type(3) {
+	background: #ddd;
+}
+
+.arrow {
+    width: 50px;
+    border-radius: 0;
+    height: 50px;
+    border: 1px;
+    margin: 0;
+    transform: rotate(225deg);
+    
+}
+
+.arrow::after {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.wrapper .dot::after {
+	border: 2px solid #ddd;
+	content: " ";
+	display: block;
+	height: 12px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	width: 12px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+h2{
+    color: white;
+    text-align: center;
+    margin: 150px;
+}
+h1{
+    color: aqua;
+    text-align: center;
+    margin-top: 50px;
+}
